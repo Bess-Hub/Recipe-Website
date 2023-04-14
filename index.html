@@ -3,29 +3,59 @@
 <head>
 <!--Add the title to the page-->
     <title>Bess Recipes</title>
-<!--Load the CSS file with the styles-->
-    <link rel="stylesheet" href="css/styles.css">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <header>
-<!--Add the logo to the header-->
-    <img src="assets/logo.png" alt="Labne" height="100" width="15%" text-align="left">
 </header>
-<!--Add the menu with links-->
-<nav><ul>
-    <li><a href="ini.html" target="eroom" id="index-link">Home</a></li>
-    <li><a href="Laban.html" target="eroom" id="labne-link">Labne</a></li>
-    <li><a href="Picanha.html" target="eroom" id="picanha-link">Picanha</a></li>
-    <li><a href="Hummus.html" target="eroom" id="hummus-link">Hummus</a></li>
-  </ul>
-</nav>
-<article>
-<!--Add the content using target and name elements, did not make it with JS-->
-    <h1><iframe name="eroom" src="ini.html" height="500px" width="100%"></iframe></h1>
-</article>
-<!--Add the footer information-->
-<footer>CSS generated with Chat GPT and modified by Bess while making the website <br> Images generated with Dall-E <br> Recipes proudly written and tested by Bess</footer>
-<body>
 
+<!-- This is where our HTML body starts -->
+<body>
+    <!--Add the menu with links-->
+<nav class="navbar navbar-white bg-white navbar-expand-sm fixed-top">
+    <div class="container-fluid">
+    <a href="index.html"><img class="navbar-brand" src="assets/logo.png" alt="yalla" text-align="left"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar" text-align="right">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Laban.html" target="eroom">Labne</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Hummus.html" target="eroom">Hummus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Picanha.html" target="eroom">Picanha</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+    <!-- Lets also add a nice toast explaining what Yalla is-->
+    <div class="toast show" style="width:auto"> 
+        <div class="toast-header">
+          What is Yalla?
+        </div>
+        <div class="toast-body">
+          Yalla is how we say "Let's go" in Lebanon!<br>So, what are you waiting?<br><h1 class="text-success">Yalla!</h1>
+        </div>
+      </div>
+</nav>
+<br></br>
+<br></br>
+<br></br>
+<!--Add the the iframe-->
+    <div style="position:relative;padding-bottom:56.25%;">
+        <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" name="eroom" src="Home.html">
+        </iframe>
+    </div>
 </body>
 
+<!--Add the footer information-->
+<footer>
+    <nav class="bg-light fixed-bottom text-center">For CSS Bootstrap 5.2.3 was used <br> All images generated with Dall-E <br> Recipes proudly written and tested by Bess.</nav>
+</footer>
+
+<!--Close HTML-->
 </html>
